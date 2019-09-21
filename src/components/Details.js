@@ -21,12 +21,12 @@ const Details = (props) => {
                     })
                     }
                 </ul>
-                <p className="myPoke__evolution">{`Evolución: ${myPoke.evolution}`|| 'No evoluciono'}</p>
+                <p className="myPoke__evolution">{myPoke.evolution ? `Evolución: ${myPoke.evolution}`: 'No evoluciono'}</p>
             </div >
             :
             <p className="ad--notFound">Lo sentimos, no encontramos a tu pokemon</p>
             }
-           <Link to="/"><p>Buscar más pokemones</p></Link>
+           <Link to="/" className="back--link"><p>Buscar más pokemones</p></Link>
         </React.Fragment>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Styles.scss';
 import { FecthPokemons } from './services/fetchPokemos';
 import Home from './components/Home';
 import Details from './components/Details';

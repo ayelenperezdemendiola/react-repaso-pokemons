@@ -5,15 +5,15 @@ import PropTypes from 'prop-types';
 const PokeCard = (props) => {
     const { name, url, id } = props;
     return (
-        <Link to={`/poke-info/${id}`}>
-            <div className="item__container">
+        <div className="item__container">
+            <Link className="link" to={`/poke-info/${id}`}>
                 <div className="img__container">
                     <img alt={name} src={url} className="img" />
                 </div>
                 <h2 className="item__name">{name}</h2>
-            </div>
-        </Link>
-    )
+            </Link>
+        </div>
+    );
 }
 
 PokeCard.propTypes = {
